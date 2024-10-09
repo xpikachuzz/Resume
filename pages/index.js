@@ -166,12 +166,10 @@ export default function Home() {
                   details.
                 </p>
               </div>
-              <Image
-                className="rounded-b object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
+              <img
+                className="w-full rounded-r h-full object-center"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
+                alt="site_cover"
               />
             </div>
             <div className="basis-1/3 flex-1 bg-slate-100 flex-row border rounded-md">
@@ -185,12 +183,10 @@ export default function Home() {
                   Display trailers (available through the api), improve the design and adding a dark mode.
                 </p>
               </div>
-              <Image
-                className="rounded-b object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
+              <img
+                className="w-full rounded-r h-full object-center"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
+                alt="site_cover"
               />
             </div>
             <div className="flex flex-row border rounded-md justify-between">
@@ -210,6 +206,7 @@ export default function Home() {
                 <img
                   className="w-full rounded-r h-full object-center"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
+                  alt="site_cover"
                 />
               </div>
             </div>
@@ -235,6 +232,7 @@ export default function Home() {
               <img
                 className="w-full rounded-r h-full object-center"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
+                alt="site_cover"
               />
             </div>
           </div>
