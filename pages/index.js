@@ -231,7 +231,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full h-full">
-                  <a href="https://task-maty.netlify.apphttps://animemate.netlify.app" target="_blank" rel="noreferrer">
+                  <a href="https://task-maty.netlify.app" target="_blank" rel="noreferrer">
                     <Image
                       className="w-full rounded-b h-full object-cover"
                       src={web2}
