@@ -15,6 +15,12 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
+import vite from "../public/Vitejs-logo.png"
+import js from "../public/js.png"
+import py from "../public/py.png"
+import redux from "../public/redux.png"
+import ts from "../public/ts.png"
+import pf from "../public/pf.png"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,7 +35,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">Rudra Bassi</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -39,7 +45,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-red-500 text- to-red-600 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="#"
                 >
                   Resume
@@ -48,11 +54,11 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-red-400 md:text-6xl">
               Rudra Bassi
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              React Developer & ________
+              React Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Alone side my Computer Science and Science degree I taught
@@ -63,12 +69,14 @@ export default function Home() {
                 a full stack dev & app developer!</b>
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <Image src={vite} width={"50px"} height={"50px"} alt="alt" />
+              <Image src={js} width={"50px"} height={"50px"} alt="alt" />
+              <Image src={redux} width={"50px"} height={"50px"} alt="alt" />
+              <Image src={py} width={"50px"} height={"50px"} alt="alt" />
+              <Image src={ts} width={"50px"} height={"50px"} alt="alt" />
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} alt="good" layout="fill" className="object-fill" />
+            <div className="mx-auto bg-gradient-to-b from-blue-900 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+              <Image src={pf} alt="good" className="object-fill" />
             </div>
           </div>
         </section>
@@ -77,7 +85,7 @@ export default function Home() {
             <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Skilled in React for building dynamic and responsive web applications, with experience in
-              JavaScript, HTML5, and CSS3. <span className="text-teal-500 font-semibold"> Eager to expand knowledge </span>in backend development
+              JavaScript, HTML5, and CSS3. <span className="text-red-500 font-semibold"> Eager to expand knowledge </span>in backend development
               (Node.js, firebase, AWS) and mobile app development using React Native.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -94,7 +102,7 @@ export default function Home() {
               <p className="py-2">
                 I can carry over what my Computer Science degree taught me to find more simplier ways to find a solution.
               </p>
-              <h4 className="py-4 text-teal-600">For example:</h4>
+              <h4 className="py-4 text-red-600">For example:</h4>
               <p className="text-gray-800 py-1">Object Orientied Programming</p>
               <p className="text-gray-800 py-1">SOLID principles</p>
               <p className="text-gray-800 py-1">Python</p>
@@ -111,7 +119,7 @@ export default function Home() {
                 reality.
               </p>
               <br />
-              <h4 className="py-4 text-teal-600">My relevant skills are:</h4>
+              <h4 className="py-4 text-red-600">My relevant skills are:</h4>
               <p className="text-gray-800 py-1">HTML, CSS, JS</p>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">Redux | Tailwind | Router-Dom</p>
@@ -128,7 +136,7 @@ export default function Home() {
               </p>
               <br />
               <br />
-              <h4 className="py-4 text-teal-600">Traits</h4>
+              <h4 className="py-4 text-red-600">Traits</h4>
               <p className="text-gray-800 py-1">Want to learn wide-variety of skills</p>
               <p className="text-gray-800 py-1">Dedicated</p>
               <p className="text-gray-800 py-1">Problem-solver</p>
