@@ -70,7 +70,7 @@ export default function Home() {
               <AiFillYoutube />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={deved} alt="good" layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={design} alt="GOOD" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Relevant University Skills
               </h3>
@@ -104,7 +104,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Problem-Solving and Algorithms</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={code} alt="good" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Self taught Skills
               </h3>
@@ -123,7 +123,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Learning from articles</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={consulting} alt="good" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Character</h3>
               <p className="py-2">
                 What kind of person I am
@@ -166,7 +166,7 @@ export default function Home() {
                   details.
                 </p>
               </div>
-              <img
+              <Image
                 className="w-full rounded-r h-full object-center"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
                 alt="site_cover"
@@ -183,7 +183,7 @@ export default function Home() {
                   Display trailers (available through the api), improve the design and adding a dark mode.
                 </p>
               </div>
-              <img
+              <Image
                 className="w-full rounded-r h-full object-center"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
                 alt="site_cover"
@@ -203,7 +203,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full">
-                <img
+                <Image
                   className="w-full rounded-r h-full object-center"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
                   alt="site_cover"
