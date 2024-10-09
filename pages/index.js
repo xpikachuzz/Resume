@@ -11,6 +11,10 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -136,19 +140,20 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              ______________________________________________________________________________
-              <span className="text-teal-500"> __________________________ </span>
-              __________________________ <span className="text-teal-500">__________________________ </span>
-              ______________________________________________________________________________
+              Front-end React developer with expertise in creating dynamic, responsive user interfaces. Proficient in using
+              modern JavaScript frameworks to deliver seamless user experiences across web and mobile platforms.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              ________________________________________________________________________________________________________
-            </p>
+              Below are some of the projects showcasing my ability to build interactive, user-focused applications using
+              React and modern front-end technologies.            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 bg-slate-200 flex-row  rounded-md justify-between">
               <div className="pt-0  pb-3 my-1 flex-1 px-2">
-                <h1 className="px-4 py-2 pt-4 text-xl">eCommerce Website</h1>
+                <div className="flex flex-row">
+                  <h1 className="px-4 py-2 pt-4 text-xl">eCommerce Website</h1>
+                  <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/course-shop" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
+                </div>
                 <div className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
                   From this I learnt a library I didnt know I needed, Redux, it simplified global state mangement
@@ -161,20 +166,24 @@ export default function Home() {
                 </div>
               </div>
               <div className="pb-2 px-2">
-                <Image
-                  className="w-full rounded-r h-full object-cover"
-                  loader={() => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"}
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  alt="site_cover"
-                />
+                <a href="https://course-shopy.netlify.app" target="_blank" rel="noreferrer">
+                  <Image
+                    className="w-full rounded-b h-full object-cover"
+                    src={web3}
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    alt="site_cover"
+                  />
+                </a>
               </div>
             </div>
             <div className="basis-1/3 flex-1 h-full bg-slate-200  rounded-md overflow-hidden justify-between">
               <div className="pt-0 px-2 pb-3 my-1">
-                <h1 className="px-4 py-2 pt-4 text-xl">Anime Search</h1>
+                <div className="flex flex-row">
+                  <h1 className="px-4 py-2 pt-4 text-xl">Anime Search</h1>
+                  <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/absCinema" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
+                </div>
                 <div className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
                   Handling filters, states, public api calls and searches at the same time.
@@ -184,21 +193,25 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-full h-full px-2 pb-2">
-                <Image
-                  className="w-full rounded-r h-full object-cover"
-                  loader={() => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"}
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                  alt="site_cover"
-                />
+                <a href="https://animemate.netlify.app" target="_blank" rel="noreferrer">
+                  <Image
+                    className="w-full rounded-b h-full object-cover"
+                    src={web1}
+                    width={"100%"}
+                    height={"100%"}
+                    layout="responsive"
+                    alt="site_cover"
+                  />
+                </a>
               </div>
             </div>
             <div className="basis-1/3 flex-1 h-full bg-slate-200  rounded-md overflow-hidden justify-between">
               <div className="pt-0 px-2 pb-2 my-1">
                 <div className="pt-0 px-2 pb-3 my-1 ">
-                  <h1 className="px-4 py-2 pt-4 text-xl">To-Do List</h1>
+                  <div className="flex flex-row">
+                    <h1 className="px-4 py-2 pt-4 text-xl">To-Do Task</h1>
+                    <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/task-mate" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
+                  </div>
                   <div className="px-4 text-sm">
                     <p className="font-bold my-1">Skills:</p>
                     This is my earlier project. A simple to-do list where the tasks are editable.
@@ -210,21 +223,25 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="w-full h-full">
-                  <Image
-                    className="w-full rounded-r h-full object-cover"
-                    loader={() => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"}
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
-                    width={"100%"}
-                    height={"100%"}
-                    layout="responsive"
-                    alt="site_cover"
-                  />
+                  <a href="https://task-maty.netlify.apphttps://animemate.netlify.app" target="_blank" rel="noreferrer">
+                    <Image
+                      className="w-full rounded-b h-full object-cover"
+                      src={web2}
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      alt="site_cover"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
             <div className="basis-1/3 flex-1 h-full bg-slate-200  rounded-md overflow-hidden justify-between">
               <div className="pt-0 px-2 pb-3 my-1">
-                <h1 className="px-4 py-2 pt-4 text-xl">Chessboard</h1>
+                <div className="flex flex-row">
+                  <h1 className="px-4 py-2 pt-4 text-xl">Chess OOP</h1>
+                  <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/chessy" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
+                </div>
                 <div className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
                   <b>I enjoyed discovering how react (especially the useState) lends itself to OOP, you return a new
@@ -237,6 +254,18 @@ export default function Home() {
                   Add easy to add key features such as 2 steps first a pawns first move. Add animations
                   for when pieces move. Show killed pieces.
                   Modularize the process of finding possible moves.
+                </div>
+                <div className="w-full h-full mt-4">
+                  <a href="https://chess-maty.netlify.app" target="_blank" rel="noreferrer">
+                    <Image
+                      className="w-full rounded-b h-full object-cover"
+                      src={web4}
+                      width={"100%"}
+                      height={"100%"}
+                      layout="responsive"
+                      alt="site_cover"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
