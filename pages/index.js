@@ -109,7 +109,7 @@ export default function Home() {
                 Self taught Skills
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
+                Do you have an idea for your next great website? Lets make it a
                 reality.
               </p>
               <br />
@@ -157,7 +157,7 @@ export default function Home() {
                 <h1 className="px-4 py-2 pt-4 text-xl">eCommerce Website</h1>
                 <p className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
-                  From this I learnt a library I didn't know I needed, Redux, it simplified global state mangement
+                  From this I learnt a library I didnt know I needed, Redux, it simplified global state mangement
                   and removed the need for irrelevant prop drillings.
                   I also learnt how to create <b>google sign in</b>. And fetched data from local json server.
                   <br />
@@ -223,13 +223,13 @@ export default function Home() {
                 board and the game will still work. I can create customer pieces limited consequences.
                 <br />
                 <p className="font-bold my-1">Improvements:</p>
-                Add easy to add key features such as 2 steps first a pawn's first move. Add animations
+                Add easy to add key features such as 2 steps first a pawns first move. Add animations
                 for when pieces move. Show killed pieces.
                 Modularize the process of finding possible moves.
               </p>
             </div>
             <div className="w-full">
-              <img
+              <Image
                 className="w-full rounded-r h-full object-center"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9APxkj0xClmrU3PpMZglHQkx446nQPG6lA&s"
                 alt="site_cover"
