@@ -58,7 +58,7 @@ export default function Home() {
               Rudra Bassi
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Full Stack Developer
+              React Developer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Along side my Computer Science and Science degree I taught
