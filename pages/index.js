@@ -71,6 +71,7 @@ export default function Home() {
       duration: 2,
       ease: "linear",
       stagger: 2,
+      text: "",
       onComplete: () => {
         const tlProfile = gsap.timeline()
         
@@ -411,18 +412,16 @@ export default function Home() {
             <div className="portfolio-card left r-1 basis-1/3 flex-1 bg-slate-200 flex-row  rounded-md justify-between">
               <div className="pt-0  pb-3 my-1 flex-1 px-2">
                 <div className="flex flex-row">
-                  <h1 className="px-4 py-2 pt-4 text-xl">Animated Trip Display</h1>
-                  <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/course-shop" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
+                  <h1 className="px-4 py-2 pt-4 text-xl">⭐ Animated Trip Website ⭐</h1>
+                  <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer"><a href="https://github.com/xpikachuzz/travel-git" target="_blank" rel="noreferrer" >{"<git />"}</a></h1>
                 </div>
                 <div className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
-                  From this I learnt a library I didnt know I needed, Redux, it simplified global state mangement
-                  and removed the need for irrelevant prop drillings.
-                  I also learnt how to create <b>google sign in</b>. And fetched data from local json server.
+                    I applied my GSAP skills to recreate an <b>AWAAAARDS</b> website designed by <a href="www.giuligartner.com" className="text-blue-700 underline">Thomas Bosc</a>.
+                    This includes scroll trigger, page transition animation, handling images and their animations.
                   <br />
                   <p className="font-bold my-1">Improvements:</p>
-                  Learn how to move local json server to backend and use it to store registered emails and product
-                  details.
+                    Learn the optimal/alternative file types for gifs (as backgrounds) and images. Properly fill out the different pages.
                 </div>
               </div>
               <div className="pb-2 px-2">
@@ -446,14 +445,15 @@ export default function Home() {
                 </div>
                 <div className="px-4 text-sm">
                   <p className="font-bold my-1">Skills:</p>
-                  Handling filters, states, public api calls and searches at the same time.
+                  A minimalist single page website inspired by <a href="https://formstudio.site" className="text-blue-600 underline">Form Studio</a>. 
+                  In this website I applied horizontal scroll and ScrollTrigger.
                   <br />
                   <p className="font-bold my-1">Improvements:</p>
-                  Display trailers (available through the api), improve the design and adding a dark mode.
+                  Fix the speed of `Project` and `Blog` sections.
                 </div>
               </div>
               <div className="w-full h-full px-2 pb-2">
-                <a href="https://animemate.netlify.app" target="_blank" rel="noreferrer">
+                <a href="https://connor-git.netlify.app" target="_blank" rel="noreferrer">
                   <Image
                     className="w-full rounded-b h-full object-cover"
                     src={web6}
