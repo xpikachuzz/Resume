@@ -26,7 +26,10 @@ import pf from "../public/pf.png"
 
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
-import { TextPlugin, ScrollTrigger } from "gsap/all";
+
+import TextPlugin from "gsap/dist/TextPlugin"
+import ScrollTrigger from "gsap/dist/ScrollTrigger"
+
 
 gsap.registerPlugin(TextPlugin)
 gsap.registerPlugin(ScrollTrigger)
@@ -302,7 +305,7 @@ export default function Home() {
             </p>
             <div className="hero-logo-cont text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
             <div className="icon-cont border border-black px-3 pt-3" > 
-                <Image onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} width={"70px"} height={"70px"}  src={vite} fill={true} alt="alt" />
+                <Image onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} width={"70px"} height={"70px"}  src={vite} alt="alt" />
               </div>
               <div className="border border-black h-fit px-3 pt-3">
                 <Image onMouseMove={onMouseMove} onMouseLeave={onMouseLeave} src={js} width={"70px"} height={"70px"} alt="alt" />
