@@ -374,8 +374,8 @@ export default function Home() {
                             </span>
                             <br />
                             <span className="font-bold">
-                                Join me in my journey to become a full stack dev
-                                & app developer!
+                                Join me in my journey to become a complete
+                                software engineer & app developer!
                             </span>
                         </p>
                         <div className="hero-logo-cont text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -529,19 +529,17 @@ export default function Home() {
                             <p className="text-gray-800 py-1">HTML, CSS, JS</p>
                             <p className="text-gray-800 py-1">React</p>
                             <p className="text-gray-800 py-1">
+                                Beginner in Node js (can make blog w/ security &
+                                PSQL)
+                            </p>
+                            <p className="text-gray-800 py-1">
                                 Redux | Tailwind | Router-Dom
                             </p>
                             <p className="text-gray-800 py-1">
                                 Reusabile components and custom hooks
                             </p>
                             <p className="text-gray-800 py-1">
-                                json server auth
-                            </p>
-                            <p className="text-gray-800 py-1">
-                                Reading documentation
-                            </p>
-                            <p className="text-gray-800 py-1">
-                                Learning from articles
+                                Learning from articles & documentation
                             </p>
                         </div>
                         <div className="skills-cont-3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
