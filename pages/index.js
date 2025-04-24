@@ -756,6 +756,8 @@ export default function Home() {
                                     <div className="mt-5">
                                         <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills 🛠️:</h3>
                                         <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            <b className="font-[900]">The purpose of this project was to allow users to create polls and see live changes in voting via the use of Web Sockets. </b>
+                                            <br />
                                             • 🐘 Use of <b className="font-[700]">PSQL </b> for secure and persistent storage, especially for login and poll details. 
                                             <br />
                                             • 🧭 <b className="font-[700]">React Router DOM </b> for routing and enabling smooth navigation between pages. 
@@ -819,6 +821,8 @@ export default function Home() {
                                     <div className="mt-5">
                                         <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills:</h3>
                                         <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            <b className="font-[900]">Use of Supabase to create a website which lets users apply to jobs by answering text/video based questions.</b>
+                                            <br />
                                             • 💬 The user is able to answer question using text or <b className="font-[700]"> video recorded</b> 🎥.
                                             <br />
                                             • 🛢️ Integrated <b className="font-[700]">Supabase</b> to handle database, video storage, and RLS 🔐.
