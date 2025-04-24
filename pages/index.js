@@ -17,6 +17,9 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import home from "../public/home.png";
+import video from "../public/video.png";
+import text from "../public/text.png";
 import vite from "../public/Vitejs-logo.png";
 import js from "../public/js.png";
 import py from "../public/py.png";
@@ -76,12 +79,11 @@ export default function Home() {
         );
 
         gsap.from(
-            ".hero-p span",
+            ".hero-p-span",
             {
-                duration: 2,
-                ease: "linear",
-                stagger: 2,
-                text: "",
+                transform: "translateX(-30px)",
+                opacity: 0,
+                stagger: 0.3
             },
             ">"
         );
@@ -117,26 +119,26 @@ export default function Home() {
         });
 
         tlSkills.from(".skills-p", {
-            text: "",
-            duration: 3,
+            x: -200,
+            opacity: 0,
         });
 
         tlSkills.from(
             ".skills-p-2",
             {
-                text: "",
-                duration: 3,
+                x: -200,
+                opacity: 0,
             },
-            ">"
+            ">-0.1"
         );
 
         // Portfolio
         const tlPortfolio = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#portfolio",
-                scroller: "body",
-                start: "top 40%",
-            },
+        //     scrollTrigger: {
+        //         trigger: "#portfolio",
+        //         scroller: "body",
+        //         start: "top 40%",
+        //     },
         });
 
         tlPortfolio.from(".portfolio-title", {
@@ -145,17 +147,16 @@ export default function Home() {
         });
 
         tlPortfolio.from(".portfolio-p", {
-            text: "",
-            duration: 3,
+            x: -75,
+            duration: 0.4,
+            opacity: 0
         });
 
         tlPortfolio.from(".portfolio-p-2", {
-            text: {
-                value: "",
-                padSpace: true,
-            },
-            duration: 2,
-        });
+            x: -75,
+            duration: 0.4,
+            opacity: 0
+        }, ">-0.3");
 
         // Skills - Cont
         const tlSkillsCard = gsap.timeline({
@@ -186,79 +187,143 @@ export default function Home() {
             "<"
         );
 
+        // Projects
+        const tlProjectsCard = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#project-1-img",
+                scroller: "body",
+                markers: "true",
+                start: `top ${0}px`,
+                end: `top -${window.innerHeight}px`,
+                scrub: 0,
+                pin: true
+            },
+            immediateRender: false
+        })
+
+        tlProjectsCard.to("#project-1-img", {
+            bottom: "0%"
+        })
+        tlProjectsCard.to("#project-1-img", {
+            yPercent: -100,
+            ease: "none"
+        }, ">")
+
+        
+        const tlProjectsCard2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#project-2-img",
+                scroller: "body",
+                markers: "true",
+                start: `top ${0}px`,
+                end: `top -${window.innerHeight}px`,
+                scrub: 0,
+                pin: true
+            },
+            immediateRender: false
+        })
+
+        tlProjectsCard2.to("#project-2-img", {
+            bottom: "0%"
+        })
+        tlProjectsCard2.to("#project-2-img", {
+            yPercent: -100,
+            ease: "none"
+        }, ">")
+                
+        const tlProjectsCard3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#project-3-img",
+                scroller: "body",
+                markers: "true",
+                start: `top ${0}px`,
+                end: `top -${window.innerHeight}px`,
+                scrub: 0,
+                pin: true
+            },
+            immediateRender: false
+        })
+
+        tlProjectsCard3.to("#project-3-img", {
+            bottom: "0%"
+        })
+        tlProjectsCard3.to("#project-3-img", {
+            yPercent: -100,
+            ease: "none"
+        }, ">")
+
         // Portfolio - Cards
-        const tlPortfolioCardRow1 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".left.r-1",
-                scroller: "body",
-                start: "top 75%",
-                end: "top: -70%",
-                scrub: 2,
-            },
-        });
+        // const tlPortfolioCardRow1 = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".left.r-1",
+        //         scroller: "body",
+        //         start: "top 75%",
+        //         end: "top -70%",
+        //         scrub: 2,
+        //     },
+        // });
 
-        tlPortfolioCardRow1.from(
-            ".left.r-1",
-            {
-                x: -100,
-                opacity: 0,
-            },
-            "row-1"
-        );
-        tlPortfolioCardRow1.from(
-            ".right.r-1",
-            {
-                x: 100,
-                opacity: 0,
-            },
-            "row-1"
-        );
+        // tlPortfolioCardRow1.from(
+        //     ".left.r-1",
+        //     {
+        //         x: -100,
+        //         opacity: 0,
+        //     },
+        //     "row-1"
+        // );
+        // tlPortfolioCardRow1.from(
+        //     ".right.r-1",
+        //     {
+        //         x: 100,
+        //         opacity: 0,
+        //     },
+        //     "row-1"
+        // );
 
-        const tlPortfolioCardRow2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".left.r-2",
-                scroller: "body",
-                start: "top 75%",
-                end: "top: -70%",
-                scrub: 2,
-            },
-        });
+        // const tlPortfolioCardRow2 = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".left.r-2",
+        //         scroller: "body",
+        //         start: "top 75%",
+        //         end: "top: -70%",
+        //         scrub: 2,
+        //     },
+        // });
 
-        tlPortfolioCardRow2.from(
-            ".left.r-2",
-            {
-                x: -100,
-                opacity: 0,
-            },
-            "row-2"
-        );
-        tlPortfolioCardRow2.from(
-            ".right.r-2",
-            {
-                x: 100,
-                opacity: 0,
-            },
-            "row-2"
-        );
+        // tlPortfolioCardRow2.from(
+        //     ".left.r-2",
+        //     {
+        //         x: -100,
+        //         opacity: 0,
+        //     },
+        //     "row-2"
+        // );
+        // tlPortfolioCardRow2.from(
+        //     ".right.r-2",
+        //     {
+        //         x: 100,
+        //         opacity: 0,
+        //     },
+        //     "row-2"
+        // );
 
-        const tlPortfolioCardRow3 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".right.r-3",
-                scroller: "body",
-                start: "top 75%",
-                end: "top: -30%",
-                scrub: 2,
-            },
-        });
-
-        tlPortfolioCardRow3.from(
-            ".right.r-3",
-            {
-                x: -100,
-                opacity: 0,
-            },
-            "row-3"
-        );
+        // const tlPortfolioCardRow3 = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: ".right.r-3",
+        //         scroller: "body",
+        //         start: "top 75%",
+        //         end: "top: -30%",
+        //         scrub: 2,
+        //     },
+        // });
+        // tlPortfolioCardRow3.from(
+        //     ".right.r-3",
+        //     {
+        //         x: -100,
+        //         opacity: 0,
+        //     },
+        //     "row-3"
+        // );
     });
 
     const onMouseMove = contextSafe((e) => {
@@ -311,6 +376,7 @@ export default function Home() {
         );
     });
 
+
     return (
         <div className={!darkMode ? "dark" : ""}>
             <Head>
@@ -321,8 +387,8 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
-                <section className="min-h-screen">
+            <main className=" bg-white  dark:bg-gray-900 ">
+                <section className="px-10 md:px-20 lg:px-40 min-h-[1080px]">
                     <nav className="py-10 mb-12 flex justify-between dark:text-white">
                         <div className="overflow-y-hidden">
                             <h1 className="font-burtons text-xl">
@@ -366,14 +432,14 @@ export default function Home() {
                             React Developer
                         </h3>
                         <p className="hero-p h-34 text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-                            <span className="">
+                            <span className="hero-p-span block">
                                 Along side my Computer Science and Science
                                 degree I taught myself from the fundamentals of
                                 web development to building an eCommerce website
                                 from scratch.
                             </span>
                             <br />
-                            <span className="font-bold">
+                            <span className="font-bold hero-p-span block">
                                 Join me in my journey to become a complete
                                 software engineer & app developer!
                             </span>
@@ -448,7 +514,8 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section id="skills">
+
+                <section id="skills" className=" px-10 md:px-10 lg:px-10">
                     <div>
                         <h3 className="skills-title text-3xl py-1 dark:text-white ">
                             Skills
@@ -571,8 +638,10 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section id="portfolio" className="py-10">
-                    <div>
+
+                {/* Projects New */}
+                <section id="new-portfolio " className="py-10 px-15 w-screen overflow-x-clip ">
+                    <div className="px-10 md:px-20 lg:px-40">
                         <h3 className="portfolio-title text-3xl py-1 dark:text-white ">
                             Portfolio
                         </h3>
@@ -589,16 +658,22 @@ export default function Home() {
                             using React and modern front-end technologies.{" "}
                         </p>
                     </div>
-                    <div className="portfolio-card-cont flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-                        {/* Row 1 */}
-                        <div className="portfolio-card left r-1 basis-1/3 flex-1 bg-slate-200 flex-row  rounded-md justify-between">
-                            <div className="pt-0  pb-3 my-1 flex-1 px-2">
-                                <div className="flex flex-row">
+                    <div className="h-screen w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
+                        <div id="project-1" className="h-screen  w-2/5 bg-blue-700 relative">
+                            <img
+                                src={"http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fweb5.e9fb3d68.png&w=1920&q=75"}
+                                alt="good"
+                                className=" h-screen w-full object-cover"
+                            />
+                        </div>
+                        <div className="w-full h-screen bg-slate-100 relative flex">
+                            <div className="px-4 w-3/5 font-[Roboto]">
+                                <div className="mt-4 font-mono">
                                     <a
                                         href="https://trip-flex.netlify.app"
-                                        className="px-4 py-2 pt-4 text-xl"
+                                        className="px-4 py-2 pt-4 text-5xl  font-[200]"
                                     >
-                                        ⭐ Animated Trip Website ⭐
+                                        ⭐ Animated Trip Website ✈️🌍
                                     </a>
                                     <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer">
                                         <a
@@ -610,57 +685,70 @@ export default function Home() {
                                         </a>
                                     </h1>
                                 </div>
-                                <div className="px-4 text-sm">
-                                    <p className="font-bold my-1">Skills:</p>I
-                                    applied my GSAP skills to recreate an{" "}
-                                    <b>AWAAAARDS</b> website designed by{" "}
-                                    <a
-                                        href="www.giuligartner.com"
-                                        className="text-blue-700 underline"
-                                    >
-                                        Thomas Bosc
-                                    </a>
-                                    . This includes scroll trigger, page
-                                    transition animation, handling images and
-                                    their animations.
+                                <div className="px-4 text-sm flex flex-col font-[Roboto]">
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills 🛠️:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3 ">
+                                            • 🎨 Applied <b className="font-[700]">GSAP</b> skills to recreate an <b className="font-[700]">AWWWARDS</b> 🏆 website designed by 
+                                            <a
+                                                href="www.giuligartner.com"
+                                                className="text-blue-700 underline"
+                                            >
+                                                Thomas Bosc
+                                            </a>.
+
+                                            <br/> 
+                                            • 📜 Implemented <b className="font-[700]">scroll-triggered</b> animations.
+                                            <br/> 
+                                            • 🎞️ Built <b className="font-[700]">page transition</b> animations for smoother navigation.
+                                            <br/> 
+                                        </p>
+                                    </div>
                                     <br />
-                                    <p className="font-bold my-1">
-                                        Improvements:
-                                    </p>
-                                    Learn the optimal/alternative file types for
-                                    gifs (as backgrounds) and images. Properly
-                                    fill out the different pages.
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Future Improvements 🚀:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            Learn the optimal file types for
+                                            gifs 🎞️ (as backgrounds) and images. Properly
+                                            fill out the different pages 📄.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="pb-2 px-2">
-                                <a
-                                    href="https://trip-flex.netlify.app"
-                                    target="_blank"
-                                    rel="noreferrer"
+                            <div id="project-1-img" className="w-2/5 h-fit absolute right-0 top-0 bg-blue-200">
+                                <iframe 
+                                    src="https://www.loom.com/embed/b0fa98ad28664e019c0b706367ec313e?sid=d9f1ea5d-cf67-4d16-8179-3723aeeef28d" 
+                                    frameBorder="0" 
+                                    allowfullscreen 
+                                    className="aspect-video"
+                                    width={"100%"}
                                 >
-                                    <Image
-                                        className="w-full rounded-b h-full object-cover"
-                                        src={web5}
-                                        width={"100%"}
-                                        height={"100%"}
-                                        layout="responsive"
-                                        alt="site_cover"
-                                    />
-                                </a>
+                                </iframe>
                             </div>
+
+                            
                         </div>
-                        <div className="portfolio-card right r-1 basis-1/3 flex-1 h-full bg-slate-200  rounded-md overflow-hidden justify-between">
-                            <div className="pt-0 px-2 pb-3 my-1">
-                                <div className="flex flex-row">
+                    </div>
+                    <div className="h-screen  w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
+                        <div id="project-2" className="h-screen  w-2/5 bg-blue-700 relative">
+                            <img
+                                src={"https://imgur.com/nuri7Tm.png"}
+                                alt="good"
+                                className=" h-screen w-full object-cover"
+                            />
+                        </div>
+                        <div className="w-full h-screen bg-slate-100 relative flex">
+                            <div className="px-4 w-3/5 font-[Roboto]">
+                                <div className="mt-4 font-mono">
                                     <a
-                                        href="https://connor-git.netlify.app"
-                                        className="px-4 py-2 pt-4 text-xl"
+                                        href="https://github.com/xpikachuzz/polling"
+                                        className="px-4 py-2 pt-4 text-5xl  font-[200]"
                                     >
-                                        CONNOR WEBSITE
+                                        ⭐ Live Polling 📊⚡
                                     </a>
                                     <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer">
                                         <a
-                                            href="https://github.com/xpikachuzz/connor-git"
+                                            href="https://github.com/xpikachuzz/polling"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -668,44 +756,109 @@ export default function Home() {
                                         </a>
                                     </h1>
                                 </div>
-                                <div className="px-4 text-sm">
-                                    <p className="font-bold my-1">Skills:</p>A
-                                    minimalist single page website inspired by{" "}
-                                    <a
-                                        href="https://formstudio.site"
-                                        className="text-blue-600 underline"
-                                    >
-                                        Form Studio
-                                    </a>
-                                    . In this website I applied horizontal
-                                    scroll and ScrollTrigger.
+                                <div className="px-4 text-sm mt-4 flex flex-col font-[Roboto] ">
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills 🛠️:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            • 🐘 Use of <b className="font-[700]">PSQL </b> for secure and persistent storage, especially for login and poll details. 
+                                            <br />
+                                            • 🧭 <b className="font-[700]">React Router DOM </b> for routing and enabling smooth navigation between pages. 
+                                            <br />
+                                            • ⚡ <b className="font-[700]">Redis </b> for in-memory storage with less overhead than typical JS storage, and fast data retrieval. 
+                                            <br />
+                                            • 🔌 <b className="font-[700]">Web Sockets </b> for live updates as votes are changing. 
+                                            <br />
+                                            • 🍪 <b className="font-[700]">Cookies </b> to stay logged in and authorize future actions. 
+                                            <br />
+                                            • 🚫 <b className="font-[700]">IP rate limiting </b> to restrict login attempts.
+                                        </p>
+                                    </div>
                                     <br />
-                                    <p className="font-bold my-1">
-                                        Improvements:
-                                    </p>
-                                    Fix the speed of `Project` and `Blog`
-                                    sections.
+                                    <div className="mt-3">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Improvements 🔧:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            • 🚀 Learn to deploy backend technologies . 
+                                            <br />
+                                            • 🔒 Have a senior check your website is secure before deploying .
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="w-full h-full px-2 pb-2">
-                                <a
-                                    href="https://connor-git.netlify.app"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <Image
-                                        className="w-full rounded-b h-full object-cover"
-                                        src={web6}
-                                        width={"100%"}
-                                        height={"100%"}
-                                        layout="responsive"
-                                        alt="site_cover"
-                                    />
-                                </a>
+                            <img 
+                                src={"https://imgur.com/nuri7Tm.png"}
+                                className="w-2/5 absolute right-0 top-0 "
+                                id="project-2-img"
+                            />
+                        </div>
+                    </div>
+                    <div className="h-screen w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
+                        <div id="project-3" className="h-screen  w-2/5 bg-blue-700 relative">
+                            <img
+                                src={"https://imgur.com/Z2jszeu.png"}
+                                alt="good"
+                                className=" h-screen w-full object-cover"
+                            />
+                        </div>
+                        <div className="w-full h-screen bg-slate-100 relative flex">
+                            <div className="px-4 w-3/5 font-[Roboto]">
+                                <div className="mt-4 font-mono">
+                                    <a
+                                        href="https://github.com/xpikachuzz/Interview"
+                                        className="px-4 py-2 pt-4 text-5xl  font-[200]"
+                                    >
+                                        ⭐ Cloud Technologies ⭐
+                                    </a>
+                                    <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer">
+                                        <a
+                                            href="https://github.com/xpikachuzz/Interview"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {"<git />"}
+                                        </a>
+                                    </h1>
+                                </div>
+                                <div className="px-4 text-sm mt-4 flex flex-col font-[Roboto]">
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            • 💬 The user is able to answer question using text or <b className="font-[700]"> video recorded</b> 🎥.
+                                            <br />
+                                            • 🛢️ Integrated <b className="font-[700]">Supabase</b> to handle database, video storage, and RLS 🔐.
+                                            <br />
+                                            • 📧 Use of authentication and <b className="font-[700]">email verification</b> when signing up.
+                                        </p>
+                                    </div>
+                                    <br />
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Improvements:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            • 🧑‍💻 Have a senior check your website is secure before deploying.
+                                            <br />
+                                            • 🎨 Fix the Front-End design (I was focused on Integrating Supabase).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="w-2/5 absolute right-0 top-0 flex flex-col hover:scale-[1.3] origin-top-right transition ">
+                                <img 
+                                    src={"https://imgur.com/qbIg8X2.png"}
+                                    className="inline-block z-30 "
+                                    id="project-3-img"
+                                />
+                                <img 
+                                    src={"https://imgur.com/ZFw94Kt.png"}
+                                    className="inline-block"
+                                    id="project-3-img2"
+                                />
                             </div>
                         </div>
+                    </div>
+                </section>
 
-                        {/* Row 2 */}
+                <section id="portfolio" className="py-10 px-10 md:px-20 lg:px-40">
+                    <div className="portfolio-card-cont flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+                {/* Row 2 */}
                         <div className="portfolio-card left r-2 basis-1/3 flex-1 bg-slate-200 flex-row  rounded-md justify-between">
                             <div className="pt-0  pb-3 my-1 flex-1 px-2">
                                 <div className="flex flex-row">
