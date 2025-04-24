@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import {
     AiFillTwitterCircle,
@@ -787,6 +788,7 @@ export default function Home() {
                             <img 
                                 src={"https://imgur.com/nuri7Tm.png"}
                                 className="w-2/5 absolute right-0 top-0 "
+                                alt="good"
                                 id="project-2-img"
                             />
                         </div>
@@ -844,11 +846,13 @@ export default function Home() {
                                 <img 
                                     src={"https://imgur.com/qbIg8X2.png"}
                                     className="inline-block z-30 "
+                                    alt="good"
                                     id="project-3-img"
                                 />
                                 <img 
                                     src={"https://imgur.com/ZFw94Kt.png"}
                                     className="inline-block"
+                                    alt="good"
                                     id="project-3-img2"
                                 />
                             </div>
