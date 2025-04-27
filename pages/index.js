@@ -792,17 +792,23 @@ export default function Home() {
                     </div>
                     <div className="h-screen w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
                         <div id="project-3" className="h-screen  w-2/5 bg-blue-700 relative">
-                            <img
-                                src={"https://imgur.com/Z2jszeu.png"}
-                                alt="good"
-                                className=" h-screen w-full object-cover"
-                            />
+                            <a 
+                                href="https://harmonious-yeot-8243ad.netlify.app"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src={"https://imgur.com/Z2jszeu.png"}
+                                    alt="good"
+                                    className=" h-screen w-full object-cover"
+                                />
+                            </a>
                         </div>
                         <div className="w-full h-screen bg-slate-100 relative flex">
                             <div className="px-4 w-3/5 font-[Roboto]">
                                 <div className="mt-4 font-mono">
                                     <a
-                                        href="https://github.com/xpikachuzz/Interview"
+                                        href="https://harmonious-yeot-8243ad.netlify.app"
                                         className="px-4 py-2 pt-4 text-5xl  font-[200]"
                                     >
                                         ⭐ Cloud Technologies ⭐
