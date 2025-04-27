@@ -725,71 +725,6 @@ export default function Home() {
                             
                         </div>
                     </div>
-                    <div className="h-screen  w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
-                        <div id="project-2" className="h-screen  w-2/5 bg-blue-700 relative">
-                            <img
-                                src={"https://imgur.com/nuri7Tm.png"}
-                                alt="good"
-                                className=" h-screen w-full object-cover"
-                            />
-                        </div>
-                        <div className="w-full h-screen bg-slate-100 relative flex">
-                            <div className="px-4 w-3/5 font-[Roboto]">
-                                <div className="mt-4 font-mono">
-                                    <a
-                                        href="https://github.com/xpikachuzz/polling"
-                                        className="px-4 py-2 pt-4 text-5xl  font-[200]"
-                                    >
-                                        ⭐ Live Polling 📊⚡
-                                    </a>
-                                    <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer">
-                                        <a
-                                            href="https://github.com/xpikachuzz/polling"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            {"<git />"}
-                                        </a>
-                                    </h1>
-                                </div>
-                                <div className="px-4 text-sm mt-4 flex flex-col font-[Roboto] ">
-                                    <div className="mt-5">
-                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills 🛠️:</h3>
-                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
-                                            <b className="font-[900]">The purpose of this project was to allow users to create polls and see live changes in voting via the use of Web Sockets. </b>
-                                            <br />
-                                            • 🐘 Use of <b className="font-[700]">PSQL </b> for secure and persistent storage, especially for login and poll details. 
-                                            <br />
-                                            • 🧭 <b className="font-[700]">React Router DOM </b> for routing and enabling smooth navigation between pages. 
-                                            <br />
-                                            • ⚡ <b className="font-[700]">Redis </b> for in-memory storage with less overhead than typical JS storage, and fast data retrieval. 
-                                            <br />
-                                            • 🔌 <b className="font-[700]">Web Sockets </b> for live updates as votes are changing. 
-                                            <br />
-                                            • 🍪 <b className="font-[700]">Cookies </b> to stay logged in and authorize future actions. 
-                                            <br />
-                                            • 🚫 <b className="font-[700]">IP rate limiting </b> to restrict login attempts.
-                                        </p>
-                                    </div>
-                                    <br />
-                                    <div className="mt-3">
-                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Improvements 🔧:</h3>
-                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
-                                            • 🚀 Learn to deploy backend technologies . 
-                                            <br />
-                                            • 🔒 Have a senior check your website is secure before deploying .
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <img 
-                                src={"https://imgur.com/nuri7Tm.png"}
-                                className="w-2/5 absolute right-0 top-0 "
-                                alt="good"
-                                id="project-2-img"
-                            />
-                        </div>
-                    </div>
                     <div className="h-screen w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
                         <div id="project-3" className="h-screen  w-2/5 bg-blue-700 relative">
                             <a 
@@ -861,6 +796,71 @@ export default function Home() {
                                     id="project-3-img2"
                                 />
                             </div>
+                        </div>
+                    </div>
+                    <div className="h-screen  w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
+                        <div id="project-2" className="h-screen  w-2/5 bg-blue-700 relative">
+                            <img
+                                src={"https://imgur.com/nuri7Tm.png"}
+                                alt="good"
+                                className=" h-screen w-full object-cover"
+                            />
+                        </div>
+                        <div className="w-full h-screen bg-slate-100 relative flex">
+                            <div className="px-4 w-3/5 font-[Roboto]">
+                                <div className="mt-4 font-mono">
+                                    <a
+                                        href="https://github.com/xpikachuzz/polling"
+                                        className="px-4 py-2 pt-4 text-5xl  font-[200]"
+                                    >
+                                        ⭐ Live Polling 📊⚡
+                                    </a>
+                                    <h1 className="px-4 py-2 pt-4 text-xl text-gray-400 hover:underline hover:cursor-pointer">
+                                        <a
+                                            href="https://github.com/xpikachuzz/polling"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {"<git />"}
+                                        </a>
+                                    </h1>
+                                </div>
+                                <div className="px-4 text-sm mt-4 flex flex-col font-[Roboto] ">
+                                    <div className="mt-5">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Skills 🛠️:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            <b className="font-[900]">The purpose of this project was to allow users to create polls and see live changes in voting via the use of Web Sockets. </b>
+                                            <br />
+                                            • 🐘 Use of <b className="font-[700]">PSQL </b> for secure and persistent storage, especially for login and poll details. 
+                                            <br />
+                                            • 🧭 <b className="font-[700]">React Router DOM </b> for routing and enabling smooth navigation between pages. 
+                                            <br />
+                                            • ⚡ <b className="font-[700]">Redis </b> for in-memory storage with less overhead than typical JS storage, and fast data retrieval. 
+                                            <br />
+                                            • 🔌 <b className="font-[700]">Web Sockets </b> for live updates as votes are changing. 
+                                            <br />
+                                            • 🍪 <b className="font-[700]">Cookies </b> to stay logged in and authorize future actions. 
+                                            <br />
+                                            • 🚫 <b className="font-[700]">IP rate limiting </b> to restrict login attempts.
+                                        </p>
+                                    </div>
+                                    <br />
+                                    <div className="mt-3">
+                                        <h3 style={{ fontFamily: 'Inter, sans-serif' }} className="text-4xl font-[200] tracking-tight">Improvements 🔧:</h3>
+                                        <p style={{ fontFamily: 'Inter, sans-serif' }} className="text-base font-[300] text-gray-600 mt-3">
+                                            • 🚀 Learn to deploy backend technologies . 
+                                            <br />
+                                            • 🔒 Have a senior check your website is secure before deploying .
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img 
+                                src={"https://imgur.com/nuri7Tm.png"}
+                                className="w-2/5 absolute right-0 top-0 "
+                                alt="good"
+                                id="project-2-img"
+                            />
                         </div>
                     </div>
                 </section>
