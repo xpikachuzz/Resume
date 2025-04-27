@@ -657,7 +657,7 @@ export default function Home() {
                     <div className="h-screen w-screen bg-slate-100 flex relative border-y-2 border-slate-400">
                         <div id="project-1" className="h-screen  w-2/5 bg-blue-700 relative">
                             <img
-                                src={"http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fweb5.e9fb3d68.png&w=1920&q=75"}
+                                src={"https://imgur.com/ORWYNIE"}
                                 alt="good"
                                 className=" h-screen w-full object-cover"
                             />
